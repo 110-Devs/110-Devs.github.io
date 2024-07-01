@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css" />
+	<link rel="stylesheet" href="dist/reveal.css" />
+	<link rel="stylesheet" href="dist/theme/black.css" />
+	<link rel="stylesheet" href="./css/fonts/fonts.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" />
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-video="./public/pb.mp4" data-background-video-loop data-background-video-muted>
+				<div style="display: flex; align-items: center; justify-content: center;">
+					<div style="flex: 1; text-align: right; padding-right: 1rem;">
+						<h6 style="font-size: 1.3rem; font-family: 'Montserrat', sans-serif; font-weight: 400;">
+							Einführung in<br />
+							<span style="font-size: 2rem; font-weight: 700; color: #4698f5">
+								<a href="https://prooph-board.com/">Proophboard</a>
+							</span><br />
+							<span style="font-weight: 500;">&amp;</span><br />
+							<span style="font-size: 2rem; font-weight: 700; color: #4698f5">
+								<a href="https://github.com/proophboard/cody-engine">Cody-Engine</a>
+							</span><br />
+						</h6>
+					</div>
+					<div style="flex: 1; text-align: justify; padding-left: 1rem;">
+						<p
+							style="font-size: 1.1rem; font-family: 'Montserrat', sans-serif; line-height: 1.7rem; font-weight: 400;">
+							Proophboard ist eine führende Plattform zur visuellen Modellierung von Event-getriebenen
+							Systemen.
+							Sie ermöglicht es verteilten Teams, Softwarelösungen effizient zu entwerfen und umzusetzen.
+							Die Cody-Engine generiert aus diesen Modellen funktionsfähige Prototypen.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section data-background-video="./public/a.mp4" data-background-video-loop data-background-video-muted>
+				<div>
+					<div
+						style="flex: 1; font-size: 1.6rem; text-align: left; font-family: 'Montserrat', sans-serif; font-weight: 500;">
+						<h2 style="color: #4698f5;">Projektauftrag</h2>
+					</div>
+					<div
+						style="flex: 1; text-align: justify; font-size: 1.2rem; text-align: left; font-family: 'Montserrat', sans-serif; font-weight: 400; text-align: justify;">
+						<p>Die <a style="color: #4698f5;"
+								href="https://github.com/proophboard/cody-engine">Cody-Engine</a> soll
+							durch die
+							Integration einer künstlicher Intelligenz erweitert werden, um die Prototypen basierend auf
+							Benutzerinteraktionen
+							anzupassen zu können. Dadurch soll das Erscheinungsbild der generierten Anwendungen
+							individuell an die
+							spezifischen
+							Anforderungen der Nutzer angepasst werden.</p>
+					</div>
+				</div>
+				<hr>
+				<div style="display: flex; justify-content: center; align-items: center;">
+					<p
+						style="font-size: 1.4rem; font-family: 'Montserrat', sans-serif; font-weight: 600; font-style: italic;">
+						&quot;Cody generates basic React UI with fully working backend integration.
+						<br>AI is used to customize look and feel of UI, without breaking backend API integration.&quot;
+					</p>
+				</div>
+			</section>
+
+			<section data-background-video="./public/cbe.mp4" data-background-video-muted background-size="contain" background-repeat="no-repeat"></section>
+			<section data-background-video="./public/output.mp4" data-background-video-muted background-size="contain" background-repeat="no-repeat" ></section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+		});
+	</script>
+</body>
+
+</html>
